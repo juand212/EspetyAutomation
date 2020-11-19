@@ -31,12 +31,12 @@ public class UserSteps {
         registerUser.withInfo(data).save();
     }
 
-    @Then("^El deberia poder utilizar el usuario para iniciar sesión$")
+    @Then("^El deberia poder utilizar el usuario para iniciar sesion$")
     public void userSaveSuccessful() throws InterruptedException {
         heShould.seeMessageOf("Información guardada correctamente");
     }
 
-    @When("^El ingresa con el usuario (.*) y la contraseña (.*)$")
+    @When("^El ingresa con el usuario (.*) y la contrasenia (.*)$")
     public void login(String user, String pass) throws InterruptedException {
         Login login = new Login(driver);
         login.withInfo(user, pass);

@@ -19,7 +19,7 @@ public class RegisterStudentPage extends BasePage{
     @FindBy(xpath = "//label[contains(text(),'Correo')]/parent::div/div/input")
     public WebElement txtEmail;
 
-    @FindBy(xpath = "//label[contains(text(),'Contraseña')]/parent::div/div/input")
+    @FindBy(xpath = "(//input[@type='password'])[2]")
     public WebElement txtPassword;
 
     @FindBy(xpath = "//button[contains(text(),'Guardar')]")

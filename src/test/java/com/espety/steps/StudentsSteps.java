@@ -28,7 +28,7 @@ public class StudentsSteps {
         login.withInfo(data);
     }
 
-    @When("^El realiza el registro de información personal$")
+    @When("^El realiza el registro de informacion personal$")
     public void registerPersonalInformation(DataTable data) throws InterruptedException {
         RegisterStudentProfile registerStudentProfile = new RegisterStudentProfile(driver);
         registerStudentProfile.withInfo(data);

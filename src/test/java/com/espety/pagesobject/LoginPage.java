@@ -10,12 +10,12 @@ public class LoginPage extends BasePage {
         super(driver);
     }
 
-    @FindBy(xpath = "//input[@ng-reflect-name='Email' and @placeholder='Correo electrónico']")
+    @FindBy(xpath = "(//input[@ng-reflect-name='Email' and @formcontrolname='Email'])[1]")
     public WebElement txtEmail;
 
-    @FindBy(xpath = "//input[@ng-reflect-name='Password' and @placeholder='Contraseña']")
+    @FindBy(xpath = "(//input[@type='password'])[1]")
     public WebElement txtPassword;
 
-    @FindBy(xpath = "(//a[contains(text(),'Inicia Sesión')])[2]")
+    @FindBy(xpath = "(//a[contains(text(),'Inicia Sesi')])[2]")
     public WebElement btnLogin;
 }
